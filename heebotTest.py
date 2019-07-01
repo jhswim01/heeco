@@ -1,4 +1,5 @@
 import discord
+import os
 import asyncio
 
 
@@ -19,4 +20,5 @@ async def on_ready():
   print('희동이 준비완료!')
 
 
-heebot.run('NTkxODgzOTc0NjIwNDc5NTA3.XRS8GQ.uJtUXxmX9Xri8_V8HnNXu9O1ETc')
+access_token = os.environ["BOT_TOKEN"]
+heebot.run(access_token)
